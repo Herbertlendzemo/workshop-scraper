@@ -221,14 +221,14 @@ df.to_csv("BUSIT_final_business_case.csv", index=False)
 
 print("🏆 Your final business case file is ready for submission!")
 
-# 1. Final check of the Business Dataset
-print(f"📊 Total Teams Scraped (Rows): {len(df)}")
-print(f"📋 Final Business Columns: {list(df.columns)}")
-print(f"🔢 Data Types for Analysis:\n{df.dtypes}")
+# # 1. Final check of the Business Dataset
+# print(f"📊 Total Teams Scraped (Rows): {len(df)}")
+# print(f"📋 Final Business Columns: {list(df.columns)}")
+# print(f"🔢 Data Types for Analysis:\n{df.dtypes}")
 
-# 2. Executive Sample
-print(f"\n📂 Executive Summary (First 5 rows):")
-df.head()
+# # 2. Executive Sample
+# print(f"\n📂 Executive Summary (First 5 rows):")
+# df.head()
 
 # Check the 'health' of your data
 print(f"✅ Data Completeness: {100 - (df.isnull().sum().sum()):.1f}%")
