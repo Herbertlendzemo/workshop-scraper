@@ -209,17 +209,17 @@ df = df.rename(columns={
     "Win_Rate": "win_performance_kpi"  # Highlight this as a Key Performance Indicator
 })
 
-# 2. Verify the changes
-print("📊 Updated Business Case Columns:")
-print(df.columns.tolist())
+# # 2. Verify the changes
+# print("📊 Updated Business Case Columns:")
+# print(df.columns.tolist())
 
-# 3. Preview the "Executive" Table
-df.head(3)
+# # 3. Preview the "Executive" Table
+# df.head(3)
 
-# Save the 'Cleaned & Renamed' version for your final report
-df.to_csv("BUSIT_final_business_case.csv", index=False)
+# # Save the 'Cleaned & Renamed' version for your final report
+# df.to_csv("BUSIT_final_business_case.csv", index=False)
 
-print("🏆 Your final business case file is ready for submission!")
+# print("🏆 Your final business case file is ready for submission!")
 
 # # 1. Final check of the Business Dataset
 # print(f"📊 Total Teams Scraped (Rows): {len(df)}")
@@ -236,14 +236,14 @@ print(f"✅ Data Completeness: {100 - (df.isnull().sum().sum()):.1f}%")
 # 1. FINAL EXPORT: The CSV for your Business Case
 df.to_csv("busit_final_output.csv", index=False)
 
-# 2. FINAL AUDIT: Proof of Work
-print(f"✅ EXPORT SUCCESSFUL")
-print(f"📊 Dataset Size: {len(df)} Teams")
-print(f"📋 Business Columns: {list(df.columns)}")
+# # 2. FINAL AUDIT: Proof of Work
+# print(f"✅ EXPORT SUCCESSFUL")
+# print(f"📊 Dataset Size: {len(df)} Teams")
+# print(f"📋 Business Columns: {list(df.columns)}")
 
-# 3. FINAL VISUAL: The 'Executive' Data Table
-print("\n📂 Final Data Preview:")
-df.head()
+# # 3. FINAL VISUAL: The 'Executive' Data Table
+# print("\n📂 Final Data Preview:")
+# df.head()
 
 # 1. AUTHENTICATION (Direct and Fixed)
 # Put your actual credentials inside the quotes below
