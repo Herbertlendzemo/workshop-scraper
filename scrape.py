@@ -247,8 +247,10 @@ print(f"✅ Data Completeness: {100 - (df.isnull().sum().sum()):.1f}%")
 
 # 1. AUTHENTICATION (Direct and Fixed)
 # Put your actual credentials inside the quotes below
-SUPABASE_URL = os.environ["https://cznzegktpmjbjraotkoa.supabase.co"]
-SUPABASE_KEY = os.environ["sb_publishable_tCbO7RGBmmpj4mNIdrMkug_KkNbacR0"]
+import os
+
+SUPABASE_URL = os.environ["SUPABASE_URL"]
+SUPABASE_KEY = os.environ["SUPABASE_KEY"]
 
 # Initialize the client
 try:
